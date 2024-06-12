@@ -1,2 +1,2 @@
-# xmnboy.github.io
-test of GitHub pages
+# gdb-test
+test of GitHub pages (aka gh-pages)
