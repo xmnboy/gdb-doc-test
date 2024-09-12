@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <!-- Automatically set base href URL. -->
 <!-- Must be first lines in the head section. -->
     <base href="/">
-    <script>
+    <!-- <script>
         (function() {
             window['_app_base'] = '/' + window.location.pathname.split('/')[1];
         })();
+    </script> -->
+
+    <script type='text/javascript'>
+        var base = document.location.pathname.split('/')[1];
+        document.write('<base href="/' + base + '" />');
     </script>
+    <!-- <base href="https://xmnboy.github.io/gdb-doc-test/" /> -->
 
     <title>Intel Distribution for GDB Reference Documentation</title>
     <meta charset="UTF-8">
