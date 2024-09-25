@@ -9,10 +9,19 @@
         })();
     </script> -->
 
-    <script type='text/javascript'>
+    <!-- <script type='text/javascript'>
         var base = document.location.pathname.split('/')[1] + '/';
         document.write('<base href="/' + base + '" />');
+    </script> -->
+
+    <script>
+        var base = document.location.pathname.split('/')[1] + '/';
+        var anchors = document.querySelectorAll('.fixAnchorClass');
+        anchors.forEach(function(anchor) {
+            anchor.href = '<https://www.example.com>';
+        });
     </script>
+
     <!-- <base href="https://xmnboy.github.io/gdb-doc-test/" /> -->
 
     <title>Intel Distribution for GDB Reference Documentation</title>
@@ -30,7 +39,7 @@
             overflow-x: hidden;
             word-break: break-word;
             overflow-wrap: break-word;
-            background-color: ivory;
+            background-color: white;
             font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
         div {
@@ -50,6 +59,9 @@
                 margin: 0 auto;
                 width: auto;
             }
+        }
+        fixAnchorClass {
+            text-decoration: none;
         }
     </style>
 </head>
@@ -77,9 +89,9 @@
         PDF is best used for printing specific pages.
     </p>
     <ul>
-        <li><h3><a href="gdb-oneapi/">Multi-Page gdb-oneapi Reference</a></h3></li>
-        <li><h3><a href="gdb-oneapi.html">Single-Page gdb-oneapi Reference</a></h3></li>
-        <li><h3><a href="gdb-oneapi.pdf">900+ Pages PDF gdb-oneapi Reference</a></h3></li>
+        <li><h3><a class="fixAnchorClass" href="gdb-oneapi/">Multi-Page gdb-oneapi Reference</a></h3></li>
+        <li><h3><a class="fixAnchorClass" href="gdb-oneapi.html">Single-Page gdb-oneapi Reference</a></h3></li>
+        <li><h3><a class="fixAnchorClass" href="gdb-oneapi.pdf">900+ Pages PDF gdb-oneapi Reference</a></h3></li>
     </ul>
 
     <h2>Intel Distribution for GDB Reference Sheet</h2>
@@ -91,7 +103,7 @@
         only available in the PDF format.
     </p>
     <ul>
-        <li><h3><a href="gdb-oneapi-reference-sheet.pdf">PDF "Cheat Sheet" for gdb-oneapi</a></h3></li>
+        <li><h3><a class="fixAnchorClass" href="gdb-oneapi-reference-sheet.pdf">PDF "Cheat Sheet" for gdb-oneapi</a></h3></li>
     </ul>
 </body>
 
