@@ -16,12 +16,14 @@
 
     <script>
         var base = document.location.pathname.split('/')[1] + '/';
-        var anchors = document.querySelectorAll('.fixAnchor');
-        anchors.forEach(function(anchor) {
-            anchor.href = anchor.href + 'base/' + anchor.nodeValue;
+        var anchor = document.getElementById('myAnchor');
+        anchor.href = '<https://www.example.com>';
+        // var anchors = document.querySelectorAll('.fixAnchor');
+        // anchors.forEach(function(anchor) {
+        //     anchor.href = anchor.href + 'base/' + anchor.nodeValue;
         //     console.log(anchor.href);
         //     console.log(anchor.nodeValue);
-        });
+        // });
         //# sourceURL=script.js
     </script>
 
@@ -92,7 +94,7 @@
         PDF is best used for printing specific pages.
     </p>
     <ul>
-        <li><h3><a class="fixAnchor" href="gdb-oneapi/">Multi-Page gdb-oneapi Reference</a></h3></li>
+        <li><h3><a id="myAnchor" class="fixAnchor" href="gdb-oneapi/">Multi-Page gdb-oneapi Reference</a></h3></li>
         <li><h3><a class="fixAnchor" href="gdb-oneapi.html">Single-Page gdb-oneapi Reference</a></h3></li>
         <li><h3><a class="fixAnchor" href="gdb-oneapi.pdf">900+ Pages PDF gdb-oneapi Reference</a></h3></li>
     </ul>
