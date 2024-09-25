@@ -18,7 +18,7 @@
         var base = document.location.pathname.split('/')[1] + '/';
         var anchors = document.querySelectorAll('.fixAnchorClass');
         anchors.forEach(function(anchor) {
-            anchor.href = 'base/';
+            anchor.href = anchor.href + 'base/' + anchor.nodeValue;
             console.log(anchor.href);
         });
         //# sourceURL=script.js
