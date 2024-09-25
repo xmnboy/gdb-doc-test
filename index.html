@@ -17,10 +17,11 @@
     <script>
         var base = document.location.pathname.split('/')[1] + '/';
         var anchors = document.querySelectorAll('.fixAnchorClass');
-        console.log(anchors.forEach(function(anchor) {
+        anchors.forEach(function(anchor) {
             anchor.href = anchor.href + 'base/' + anchor.nodeValue;
             console.log(anchor.href);
-        }));
+            console.log(anchor.nodeValue);
+        });
         //# sourceURL=script.js
     </script>
 
